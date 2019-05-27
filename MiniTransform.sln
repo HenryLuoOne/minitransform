@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTransform", "MiniTransform.csproj", "{D670C06A-8506-4ED2-81C0-14AD0702EAFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D670C06A-8506-4ED2-81C0-14AD0702EAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D670C06A-8506-4ED2-81C0-14AD0702EAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D670C06A-8506-4ED2-81C0-14AD0702EAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D670C06A-8506-4ED2-81C0-14AD0702EAFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F85EE9C3-EDFA-4878-897E-98F3C77F2881}
+	EndGlobalSection
+EndGlobal

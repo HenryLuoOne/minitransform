@@ -1,0 +1,10 @@
+1. validate input data
+2. do authorization when necessary
+3. improve test coverage
+4. isolation (scoped data)
+5. avoid naive "secure" mechanism, use industrial standard algorithm
+6. avoid complex logic if possible
+7. release resource after usage
+8. use available tools to detect code defects
+9. care for compilation warning
+10.sanitize data for other system/sub system

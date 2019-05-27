@@ -1,0 +1,35 @@
+Basically this design is mainly embodied by source code "FieldOperation.cs" and "TargetGeneration.cs".
+
+1. FieldOperation is to define how a target field is derived from source column; this class defines the relationship
+	between target field and source column;
+2. TargetGeneration is a collection of FieldOperation, defining how the target file (field by field) is derived from
+	source file (column by column); this class defines the relationship between source file and target file;
+3. The output format (standard format) is defined via StandardRow.cs;
+4. The OperationExecutor is applying the FieldOperation defined by TargetGeneration to get the target file;
+
+Looking at the requirement, we can see all the transforms are kind of string operation, which is defined by FieldOperation sub-types; by introducing (extending FieldOperation) more sub-types, we can implement other relationship between source data
+and target data format, e.g. arithmetic calculation of multiple source column to get a target field. 
+
+The enum OperationType (in FieldOperation.cs) is not in use for now; but this could be useful when we need to pass the transform
+relationship between different machines via json format:
+
+{
+	"TargetGeneration": {
+		"Open Date": {
+			"operationType": "ParseDate",
+			"sourceColumnIndex": 2,
+			"datePattern": "yyyy-MM-dd"
+		},
+		"Currency": {
+			"operationType": "DirectMap",
+			"sourceColumnIndex": 1,
+			"sourceToTarget": {
+				"CD": "CAD",
+				"US": "USD"
+			}
+		}
+	}
+}
+
+
+
